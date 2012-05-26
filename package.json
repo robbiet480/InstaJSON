@@ -9,7 +9,6 @@
   , "dependencies": {
       "express": "2.5.8"
     , "jade": ">= 0.0.1"
-    , "connect-mongo": "0.1.9"
     , "instagram-node-lib": "0.0.7"
     , "mongoose": "2.6.5"
   }
