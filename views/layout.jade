@@ -1,6 +1,27 @@
 !!!
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body!= body
+	head
+		title InstaJSON
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.min.css')
+		link(rel='stylesheet', href='/stylesheets/custom.css')
+		script(type='text/javascript', src='http://code.jquery.com/jquery-latest.min.js')
+		script(type='text/javascript', src='/javascripts/bootstrap.min.js')
+	body
+		div(class="navbar navbar-fixed-top")
+			div.navbar-inner
+				div.container
+					a(class='brand', href="/") InstaJSON
+					div(class="nav-collapse")
+						ul(class="nav")
+							li
+								a(href="/") Home
+							li
+								a(href="/yourfeed") Your feed
+		div.container!= body
+			hr
+			footer.footer
+				p
+					| Powered by <a href="http://node.js">node.js</a>, <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>, <a href="http://mongodb.org">MongoDB</a>, <a href="http://heroku.com">Heroku</a> and love!
+				p 
+					| &copy; 2012 <a href="http://robbie.io">Robbie Trencheny</a>
