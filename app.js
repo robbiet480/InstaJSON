@@ -33,8 +33,8 @@ app.configure('production', function(){
 // API Config
 Instagram.set('client_id', 'a96a954d0536420cbd676bd3775b2661');
 Instagram.set('client_secret', '104108fe0a9a47768a8e85388bc8eb94');
-Instagram.set('callback_url', 'http://localhost:3000/callback');
-Instagram.set('redirect_uri', 'http://localhost:3000/redirect');
+Instagram.set('callback_url', 'http://instajson.herokuapp.com/callback');
+Instagram.set('redirect_uri', 'http://instajson.herokuapp.com/redirect');
 
 // Mongo
 mongoose.connect(process.env.MONGOLAB_URI);
